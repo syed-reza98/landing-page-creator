@@ -1,3 +1,4 @@
+import React from "react"
 import { AnnouncementBar } from "@/components/AnnouncementBar"
 import { Header } from "@/components/Header"
 import { HeroSection } from "@/components/HeroSection"

@@ -1,3 +1,4 @@
+import React from "react"
 import { Button } from "@/components/ui/button"
 import { Sparkle, DiscordLogo } from "@phosphor-icons/react"
 
