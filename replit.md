@@ -32,9 +32,11 @@ This is a frontend-only application with the following architecture:
 ## Recent Changes (October 6, 2025)
 - Initial setup for Replit environment
 - Configured Vite server to bind to 0.0.0.0:5000 for Replit proxy compatibility
+- Added `allowedHosts: true` to Vite server config to allow Replit proxy hosts
 - Added deployment configuration for autoscale deployment
 - Installed all npm dependencies
-- Verified application runs correctly
+- Updated .gitignore to exclude Replit configuration files
+- Verified application runs correctly and is accessible through Replit preview
 
 ## Dependencies
 All dependencies are managed via npm and defined in package.json. Major libraries include:
