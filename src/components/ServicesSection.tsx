@@ -13,7 +13,10 @@ import {
   CurrencyDollar,
   Palette,
   Globe,
-  GraduationCap
+  GraduationCap,
+  Network,
+  TShirt,
+  ArrowRight
 } from "@phosphor-icons/react"
 
 const services = [
@@ -98,80 +101,86 @@ const services = [
     id: 12,
     title: "Premium Domains",
     description: "We are constantly growing or learning and improving. Enter your personal real estate sanctuary, where finding the ideal home is",
+    icon: Globe,
+    featured: false
+  },
+  {
+    id: 13,
+    title: "Proxy",
+    description: "We are constantly growing or learning and improving. Enter your personal real estate sanctuary, where finding the ideal home is",
+    icon: Network,
+    featured: false
+  },
+  {
+    id: 14,
+    title: "Merchandise",
+    description: "We are constantly growing or learning and improving. Enter your personal real estate sanctuary, where finding the ideal home is",
+    icon: TShirt,
+    featured: false
+  },
+  {
+    id: 15,
+    title: "Academy",
+    description: "We are constantly growing or learning and improving. Enter your personal real estate sanctuary, where finding the ideal home is",
     icon: GraduationCap,
     featured: false
   }
 ]
 
-const additionalServices = [
-  { title: "Proxy", icon: Globe },
-  { title: "Merchandise", icon: Palette }, 
-  { title: "Academy", icon: GraduationCap }
-]
-
 export function ServicesSection() {
   return (
-    <section className="py-20">
+    <section className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Our Services</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4">Our Services</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
             Enter your personal real estate sanctuary, where finding the ideal 
             home is effortless and comfortable with our assistance.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service) => {
             const IconComponent = service.icon
             return (
               <Card 
                 key={service.id} 
-                className={`group hover:border-primary/50 transition-all duration-300 ${
-                  service.featured ? 'bg-primary/10 border-primary/30' : 'bg-card'
+                className={`group cursor-pointer transition-all duration-300 hover:scale-105 ${
+                  service.featured 
+                    ? 'featured-service text-primary-foreground' 
+                    : 'service-card hover:service-card:hover'
                 }`}
               >
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4 mb-4">
-                    <div className={`p-3 rounded-lg ${service.featured ? 'bg-primary/20' : 'bg-muted'}`}>
-                      <IconComponent size={24} className={service.featured ? 'text-primary' : 'text-muted-foreground'} />
+                    <div className={`p-3 rounded-lg ${
+                      service.featured 
+                        ? 'bg-primary-foreground/20' 
+                        : 'bg-primary/20'
+                    }`}>
+                      <IconComponent 
+                        size={24} 
+                        className={service.featured ? 'text-primary-foreground' : 'text-primary'} 
+                      />
                     </div>
                   </div>
                   
                   <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-                  <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
+                  <p className={`text-sm mb-4 leading-relaxed ${
+                    service.featured ? 'text-primary-foreground/80' : 'text-muted-foreground'
+                  }`}>
                     {service.description}
                   </p>
                   
-                  <Button variant="link" className="text-primary p-0 h-auto font-medium">
-                    Read More →
-                  </Button>
-                </CardContent>
-              </Card>
-            )
-          })}
-        </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {additionalServices.map((service, index) => {
-            const IconComponent = service.icon
-            return (
-              <Card key={index} className="group hover:border-primary/50 transition-all duration-300">
-                <CardContent className="p-6">
-                  <div className="flex items-start space-x-4 mb-4">
-                    <div className="p-3 bg-muted rounded-lg">
-                      <IconComponent size={24} className="text-muted-foreground" />
-                    </div>
-                  </div>
-                  
-                  <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-                  <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
-                    We are constantly growing or learning and improving. Enter your 
-                    personal real estate sanctuary, where finding the ideal home is
-                  </p>
-                  
-                  <Button variant="link" className="text-primary p-0 h-auto font-medium">
-                    Read More →
+                  <Button 
+                    variant="link" 
+                    className={`p-0 h-auto font-medium flex items-center gap-1 ${
+                      service.featured 
+                        ? 'text-primary-foreground hover:text-primary-foreground/80' 
+                        : 'text-primary hover:text-primary/80'
+                    }`}
+                  >
+                    Read More <ArrowRight size={14} />
                   </Button>
                 </CardContent>
               </Card>

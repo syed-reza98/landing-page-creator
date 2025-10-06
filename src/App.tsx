@@ -8,6 +8,7 @@ import { ServicesSection } from "@/components/ServicesSection"
 import { PortfolioSection } from "@/components/PortfolioSection"
 import { ProcessSection } from "@/components/ProcessSection"
 import { StatsSection } from "@/components/StatsSection"
+import { WhyChooseSection } from "@/components/WhyChooseSection"
 import { TestimonialsSection } from "@/components/TestimonialsSection"
 import { BlogSection } from "@/components/BlogSection"
 import { PodcastSection } from "@/components/PodcastSection"
@@ -24,6 +25,7 @@ function App() {
       <PortfolioSection />
       <ProcessSection />
       <StatsSection />
+      <WhyChooseSection />
       <TestimonialsSection />
       <BlogSection />
       <PodcastSection />
