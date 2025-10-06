@@ -13,18 +13,18 @@ const announcements = [
 
 export function AnnouncementBar() {
   return (
-    <div className="bg-gradient-to-r from-primary/90 to-secondary/90 overflow-hidden py-2">
-      <div className="announcement-scroll flex items-center gap-8 whitespace-nowrap">
-        {announcements.map((text, index) => (
+    <div className="bg-gradient-to-r from-primary/20 via-secondary/20 to-primary/20 border-b border-border/50 overflow-hidden py-3">
+      <div className="announcement-scroll flex items-center gap-6 whitespace-nowrap">
+        {[...announcements, ...announcements].map((text, index) => (
           <div key={index} className="flex items-center gap-2">
             {text === "30% OFF" ? (
-              <Badge className="bg-accent text-accent-foreground font-semibold px-3 py-1">
+              <Badge className="bg-accent hover:bg-accent text-accent-foreground font-bold px-4 py-1.5 rounded-full text-sm">
                 {text}
               </Badge>
             ) : (
               <>
-                <span className="text-foreground font-medium">{text}</span>
-                <span className="text-foreground/60">•</span>
+                <span className="text-foreground/90 font-medium text-sm">{text}</span>
+                <span className="text-foreground/40 text-xs">•</span>
               </>
             )}
           </div>

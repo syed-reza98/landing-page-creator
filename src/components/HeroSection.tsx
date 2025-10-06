@@ -4,20 +4,16 @@ import { Sparkle, DiscordLogo } from "@phosphor-icons/react"
 
 export function HeroSection() {
   return (
-    <main className="relative px-8 py-16 flex items-center min-h-[70vh]">
-      {/* Background number */}
-      <div className="absolute right-8 top-1/2 -translate-y-1/2 select-none pointer-events-none">
-        <div className="number-outline rounded-3xl p-8">
-          <span className="text-[300px] font-bold text-transparent bg-gradient-to-b from-primary/30 to-primary/10 bg-clip-text leading-none">
-            73
-          </span>
-        </div>
+    <main className="relative px-8 py-20 flex items-center min-h-[80vh] overflow-hidden">
+      {/* Background number - positioned like in prototype */}
+      <div className="hero-number">
+        73
       </div>
 
       {/* Content */}
-      <div className="max-w-2xl space-y-8 relative z-10">
-        <div className="space-y-4">
-          <h1 className="text-6xl font-bold leading-tight">
+      <div className="max-w-3xl space-y-10 relative z-10">
+        <div className="space-y-6">
+          <h1 className="text-7xl font-black leading-[0.9] tracking-tight">
             <span className="text-foreground">Expert to</span>
             <br />
             <span className="text-foreground">Digitalise Your</span>
@@ -25,7 +21,7 @@ export function HeroSection() {
             <span className="gradient-text">Growth</span>
           </h1>
           
-          <p className="text-lg text-foreground/80 max-w-lg leading-relaxed">
+          <p className="text-xl text-foreground/70 max-w-xl leading-relaxed font-medium">
             We are constantly growing or learning and improving. Enter your the 
             personal real estate sanctf uary, where finding the ideal home is
           </p>
@@ -33,9 +29,9 @@ export function HeroSection() {
 
         <Button 
           size="lg" 
-          className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-foreground font-semibold px-8 py-6 rounded-full flex items-center gap-2 text-lg transition-all duration-300 hover:scale-105"
+          className="bg-gradient-to-r from-primary via-secondary to-primary hover:from-primary/90 hover:via-secondary/90 hover:to-primary/90 text-foreground font-bold px-10 py-7 rounded-full flex items-center gap-3 text-xl transition-all duration-300 hover:scale-105 hover-glow shadow-2xl"
         >
-          <Sparkle size={20} weight="fill" />
+          <Sparkle size={24} weight="fill" />
           Explore Now
         </Button>
       </div>
@@ -44,9 +40,9 @@ export function HeroSection() {
       <div className="fixed bottom-8 right-8 z-50">
         <Button 
           size="icon" 
-          className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110"
+          className="w-20 h-20 rounded-full bg-gradient-to-br from-primary via-secondary to-primary hover:from-primary/90 hover:via-secondary/90 hover:to-primary/90 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-110 hover-glow"
         >
-          <DiscordLogo size={28} weight="fill" className="text-foreground" />
+          <DiscordLogo size={32} weight="fill" className="text-foreground" />
         </Button>
       </div>
     </main>
