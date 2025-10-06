@@ -52,6 +52,7 @@
   --color-ring: var(--ring);
 }
 
+/* Custom gradients and effects */
 .purple-gradient {
   background: linear-gradient(
     135deg,
@@ -61,15 +62,6 @@
     oklch(0.35 0.25 280) 75%,
     oklch(0.25 0.20 285) 100%
   );
-}
-
-.brand-logos {
-  animation: scroll 30s linear infinite;
-}
-
-@keyframes scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
 }
 
 .hero-background {
@@ -129,10 +121,34 @@
   );
 }
 
+/* Brand logos animation */
+.brand-logos {
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Portfolio grid */
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
+}
+
+/* Typography improvements */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 /* Responsive styles */
@@ -162,6 +178,19 @@
 /* Focus styles for accessibility */
 .focus-visible {
   @apply ring-2 ring-ring ring-offset-2 ring-offset-background;
+}
+
+/* Custom button styles */
+.btn-primary {
+  background: linear-gradient(135deg, oklch(0.65 0.30 285), oklch(0.55 0.35 290));
+  border: none;
+  box-shadow: 0 4px 14px 0 rgba(139, 92, 246, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px 0 rgba(139, 92, 246, 0.4);
 }
 
 

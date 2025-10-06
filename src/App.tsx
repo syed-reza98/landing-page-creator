@@ -12,6 +12,7 @@ import { WhyChooseSection } from "@/components/WhyChooseSection"
 import { TestimonialsSection } from "@/components/TestimonialsSection"
 import { BlogSection } from "@/components/BlogSection"
 import { PodcastSection } from "@/components/PodcastSection"
+import { Footer } from "@/components/Footer"
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <TestimonialsSection />
       <BlogSection />
       <PodcastSection />
+      <Footer />
     </div>
   )
 }

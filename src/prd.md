@@ -1,136 +1,211 @@
-# Metro Solver - Landing Page Redesign PRD
+# Metro Solver - Landing Page Product Requirements Document
 
 ## Core Purpose & Success
-- **Mission Statement**: Redesign Metro Solver's landing page to exactly match the Figma screenshots, creating a professional digital agency website that converts visitors into clients.
-- **Success Indicators**: Pixel-perfect visual matching across all breakpoints, improved user engagement, and seamless navigation flow.
-- **Experience Qualities**: Professional, Modern, Trustworthy
+
+**Mission Statement**: To create a professional, modern landing page for Metro Solver that effectively communicates their digital transformation services and converts visitors into qualified leads.
+
+**Success Indicators**: 
+- Increased conversion rate from visitors to contact inquiries
+- Clear communication of service offerings
+- Professional brand presentation that builds trust
+- Mobile-responsive experience across all devices
+
+**Experience Qualities**: Professional, Modern, Trustworthy
 
 ## Project Classification & Approach
-- **Complexity Level**: Content Showcase with Light Application features (testimonial carousel, service interactions)
-- **Primary User Activity**: Consuming information about services, then Acting (contacting for services)
 
-## Thought Process for Feature Selection
-- **Core Problem Analysis**: The current design doesn't match the professional, modern aesthetic shown in the Figma screenshots
-- **User Context**: Business owners and decision-makers researching digital agency services
-- **Critical Path**: Landing → Services Overview → Portfolio → Contact/Book Call
-- **Key Moments**: Hero section first impression, services grid exploration, portfolio showcase, testimonial validation
+**Complexity Level**: Content Showcase (information-focused with light interactive elements)
+
+**Primary User Activity**: Consuming information about services, with calls-to-action for engagement
 
 ## Essential Features
 
-### Header & Navigation
-- Top bar with key USPs (Budget Friendly, No. 1 in Europe, 30% OFF, User Friendly, 24/7 Service)
-- Main navigation with Home, About us, Services dropdown, White label, Contact us
-- Shopping cart icon and user profile
-- Responsive mobile menu
+### Core Sections (Based on Figma Screenshots)
 
-### Hero Section
-- "Expert to Digitalise Your Growth" headline with purple accent
-- Supporting copy and CTA button
-- Geometric purple background elements
-- Floating help/chat button
+1. **Top Navigation Bar**
+   - Budget Friendly, No. 1 in Europe messaging
+   - 30% OFF promotional banner
+   - User Friendly, 24/7 Service messaging
 
-### Brand Logos Carousel
-- Scrolling brand logos (luminus, brembo, motorola, etc.)
+2. **Navigation Header**
+   - Metro Solver logo with distinctive "M" icon
+   - Navigation links: Home, About us, Services (dropdown), White label, Contact us
+   - Shopping cart icon and user avatar
 
-### Services Grid
-- 12 service cards with icons and descriptions:
-  - Graphic Design, Web & Software Development (featured), Multimedia & Video Editing
-  - Digital Marketing, Creative Writing Solution, SEO
-  - 3D Animation & Visualisation, E-Commerce Solution, Accounting
-  - Special Combo, Premium Website, Premium Domains
-  - Proxy, Merchandise, Academy
+3. **Hero Section**
+   - "Expert to Digitalise Your Growth" headline
+   - Descriptive text about the company's mission
+   - "Explore Now" CTA button
+   - Geometric purple gradient background elements
+   - Floating chat support button
 
-### Portfolio Section
-- "Our Latest Works" with portfolio grid
-- Various project thumbnails and case studies
-- Right-aligned descriptive text
+4. **Brand Logos Section**
+   - Animated scrolling logos of partner companies
+   - "Get My 15% OFF" discount banner overlay
 
-### Process Section
-- Video testimonial with play button
-- "How to Works?" circular process diagram
-- 6-step process: Delivery and Support, Book a Call, Quality Assurance, Requirement Analysis, Implement & Develop, Service Customisation
+5. **Services Grid**
+   - "Our Services" section with comprehensive service offerings
+   - 15 service categories including:
+     - Graphic Design
+     - Web & Software Development (featured)
+     - Multimedia & Video Editing
+     - Digital Marketing
+     - Creative Writing Solution
+     - SEO
+     - 3D Animation & Visualisation
+     - E-Commerce Solution
+     - Accounting
+     - Special Combo
+     - Premium Website
+     - Premium Domains
+     - Proxy
+     - Merchandise
+     - Academy
+   - Featured service highlighted with purple gradient
 
-### Statistics Section
-- Three key metrics: 150+ Current Clients, 25k+ Completed Projects, 90+ Metro Solver Teams
+6. **Portfolio Showcase**
+   - "Our Latest Works" section
+   - Grid layout with colorful project thumbnails
+   - Projects spanning various industries and design styles
 
-### Testimonials Section
-- "What People Say" with customer reviews
-- Star ratings and review sources (Google, Trustpilot)
-- Carousel navigation
+7. **Process Workflow**
+   - Video preview section with play button
+   - "How to Works?" circular diagram
+   - 6-step process visualization:
+     - Book a Call
+     - Requirement Analysis
+     - Service Customisation
+     - Implement & Develop
+     - Quality Assurance
+     - Delivery and Support
 
-### Blog/Case Studies Section
-- Three content categories: Success Stories, Case Studies, Blog and News
-- Featured articles with metrics and thumbnails
+8. **Statistics Section**
+   - Key metrics display:
+     - 150+ Current Clients
+     - 25k+ Completed Projects
+     - 90+ Metro Solver Teams
 
-### Podcast Section
-- "Did You Hear about Our Podcast?" 
-- Two podcast episodes with play buttons and metadata
+9. **Why Choose Us**
+   - "Why You Choose Metro Solver?" section
+   - Key benefits highlighted:
+     - Cancel Anytime
+     - 24/7 Customer Service
+     - Refers & Earn
+     - Money Back Guarantee
+
+10. **Testimonials**
+    - "What People Say" section
+    - Customer testimonials from Google and Trustpilot
+    - Featured testimonial from Wade Warren
+    - Navigation arrows for carousel
+
+11. **Content Hub**
+    - "The Success Stories, Case Studies & Blog" section
+    - Tabbed interface: Success Stories, Case Studies, Blog and News
+    - Case study cards with metrics and performance data
+
+12. **Podcast Section**
+    - "Did You Hear about Our Podcast?" section
+    - Podcast episode previews with play buttons
+    - Episode metadata (duration, date)
+
+13. **Footer**
+    - Company information and social media links
+    - Service links and quick navigation
+    - Contact information
+    - Legal links and copyright
 
 ## Design Direction
 
 ### Visual Tone & Identity
-- **Emotional Response**: Professional confidence, innovative capability, trustworthy expertise
-- **Design Personality**: Modern, sleek, tech-forward with premium feel
-- **Visual Metaphors**: Geometric shapes, gradients, clean interfaces
-- **Simplicity Spectrum**: Rich interface with clear information hierarchy
+
+**Emotional Response**: Professional confidence, innovation, reliability, and growth-oriented energy
+
+**Design Personality**: Modern, sophisticated, tech-forward with a touch of creativity through the purple gradient elements
+
+**Visual Metaphors**: Digital transformation through geometric shapes and gradient elements suggesting progress and innovation
+
+**Simplicity Spectrum**: Clean and organized with strategic use of visual elements to create hierarchy and interest
 
 ### Color Strategy
-- **Color Scheme Type**: Monochromatic purple with dark theme
-- **Primary Color**: Purple/violet (#8B5CF6 equivalent) - innovation and creativity
-- **Secondary Colors**: Dark navy/black backgrounds for premium feel
-- **Accent Color**: Bright purple for CTAs and highlights
-- **Color Psychology**: Purple conveys creativity and luxury, dark backgrounds suggest professionalism
-- **Color Accessibility**: High contrast white text on dark backgrounds
-- **Foreground/Background Pairings**: White text on dark backgrounds, purple accents on dark cards
+
+**Color Scheme Type**: Complementary with purple/violet as primary and dark theme foundation
+
+**Primary Color**: Purple/Violet gradient (oklch(0.65 0.30 285)) - communicates innovation, creativity, and premium service
+
+**Secondary Colors**: 
+- Deep dark background (oklch(0.06 0.05 270)) for sophisticated, professional feel
+- Card backgrounds (oklch(0.10 0.08 270)) for content separation
+- Muted text (oklch(0.70 0.05 270)) for supporting information
+
+**Accent Color**: Red for promotional elements (30% OFF banner) to create urgency and attract attention
+
+**Color Psychology**: Purple conveys innovation and premium quality, dark theme suggests professionalism and focus, red accents create urgency for promotional content
+
+**Foreground/Background Pairings**:
+- Primary text on dark background: white (oklch(0.98 0.01 0)) on dark (oklch(0.06 0.05 270)) - High contrast ratio
+- Purple primary on dark: (oklch(0.65 0.30 285)) on dark background - Sufficient contrast
+- Card content: white text on card background (oklch(0.10 0.08 270)) - Good readability
 
 ### Typography System
-- **Font Pairing Strategy**: Clean sans-serif for both headings and body text
-- **Typographic Hierarchy**: Bold large headings, medium weight subheadings, regular body text
-- **Font Personality**: Modern, clean, highly legible
-- **Readability Focus**: Generous line spacing, appropriate font sizes
-- **Typography Consistency**: Consistent spacing and sizing across sections
-- **Which fonts**: Inter font family (already loaded)
-- **Legibility Check**: Inter is highly legible across all weights and sizes
 
-### Visual Hierarchy & Layout
-- **Attention Direction**: Large hero text, prominent CTAs, organized service grid
-- **White Space Philosophy**: Generous spacing between sections and elements
-- **Grid System**: 3-column grid for services, flexible grid for portfolio
-- **Responsive Approach**: Stack columns on mobile, maintain hierarchy
-- **Content Density**: Balanced information density with clear separation
+**Font Pairing Strategy**: Single font family (Inter) with multiple weights for consistency and modern feel
 
-### Animations
-- **Purposeful Meaning**: Subtle hover effects, smooth transitions
-- **Hierarchy of Movement**: Button hovers, card interactions, carousel navigation
-- **Contextual Appropriateness**: Professional subtle animations
+**Typographic Hierarchy**:
+- Headings: Inter Bold (700-900 weight) with tight letter spacing (-0.02em)
+- Body text: Inter Regular (400-500) with optimized line height (1.5x)
+- UI elements: Inter Medium (500-600) for buttons and navigation
 
-### UI Elements & Component Selection
-- **Component Usage**: Cards for services, buttons for CTAs, carousel for testimonials
-- **Component Customization**: Purple theme with rounded corners, dark backgrounds
-- **Component States**: Hover effects, focus states, active states
-- **Icon Selection**: Simple line icons for services and features
-- **Component Hierarchy**: Primary purple buttons, secondary outline buttons
-- **Spacing System**: Consistent padding using Tailwind spacing scale
-- **Mobile Adaptation**: Stack layouts, larger touch targets
+**Font Personality**: Clean, modern, highly legible, professional yet approachable
 
-### Visual Consistency Framework
-- **Design System Approach**: Component-based with consistent styling
-- **Style Guide Elements**: Color palette, typography scale, spacing system
-- **Visual Rhythm**: Consistent card styling, button treatments, spacing
-- **Brand Alignment**: Purple brand color throughout, professional imagery
+**Which fonts**: Inter from Google Fonts - excellent for digital interfaces and multilingual support
 
-### Accessibility & Readability
-- **Contrast Goal**: WCAG AA compliance with white text on dark backgrounds
+**Legibility Check**: Inter is specifically designed for screen readability with excellent character differentiation
 
-## Edge Cases & Problem Scenarios
-- **Potential Obstacles**: Complex service grid layout on mobile, carousel navigation
-- **Edge Case Handling**: Responsive breakpoints, touch-friendly navigation
-- **Technical Constraints**: Image optimization, smooth animations
+### Component Design
+
+**Navigation**: Clean, minimal navigation with clear active states and hover effects
+
+**Buttons**: Rounded corners, gradient backgrounds for primary actions, clear hierarchy with ghost and outline variants
+
+**Cards**: Subtle shadows, rounded corners, hover effects with gentle scale transforms
+
+**Grid Systems**: Responsive grid layouts with consistent spacing and alignment
+
+**Icons**: Phosphor Icons for consistency and modern aesthetic
+
+**Spacing System**: Consistent padding and margins using Tailwind's spacing scale (4px base unit)
 
 ## Implementation Considerations
-- **Scalability Needs**: Modular components, reusable styling
-- **Testing Focus**: Cross-browser compatibility, responsive design
-- **Critical Questions**: Animation performance, image loading optimization
 
-## Reflection
-This approach creates a premium, professional digital agency website that builds trust through social proof, clearly communicates services, and guides users toward conversion. The dark theme with purple accents creates a modern, sophisticated brand presence that differentiates Metro Solver in the competitive digital agency space.
+**Technology Stack**: 
+- React with TypeScript for component architecture
+- Tailwind CSS for styling and responsive design
+- Phosphor Icons for consistent iconography
+- shadcn/ui for base component library
+
+**Performance**: 
+- Optimized images and responsive loading
+- Efficient animations with CSS transforms
+- Smooth scrolling and reduced motion preferences
+
+**Accessibility**:
+- WCAG AA compliance for color contrast
+- Keyboard navigation support
+- Screen reader friendly markup
+- Focus management for interactive elements
+
+**Mobile Responsiveness**:
+- Mobile-first design approach
+- Responsive grid layouts
+- Touch-friendly button sizes (minimum 44px)
+- Readable typography on small screens
+
+## Success Metrics
+
+- Visual parity with Figma designs across desktop, tablet, and mobile
+- Fast loading times (under 3 seconds)
+- High conversion rate on CTA buttons
+- Professional brand perception
+- Effective communication of service offerings
+- Strong lead generation through contact forms
