@@ -1,9 +1,10 @@
 import React from "react"
 import { Button } from "@/components/ui/button"
-import { Sparkle, ChatCircle } from "@phosphor-icons/react"
+import { Sparkle } from "@phosphor-icons/react"
 import Lottie from "lottie-react"
 import logoAnimation from "../../Materiel/Lottie Files/Logo.json"
 import textAnimation from "../../Materiel/Lottie Files/Text.json"
+import botAnimation from "../../Materiel/Lottie Files/Bot.json"
 
 export function HeroSection() {
   return (
@@ -44,11 +45,13 @@ export function HeroSection() {
         </div>
       </div>
       
-      {/* Floating help button */}
+      {/* Floating help button with Bot animation */}
       <div className="fixed bottom-8 right-8 z-50">
-        <Button size="icon" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full w-16 h-16 shadow-xl hover:shadow-2xl hover:shadow-primary/50 transition-all">
-          <ChatCircle size={28} />
-        </Button>
+        <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center shadow-xl hover:shadow-2xl hover:shadow-primary/50 transition-all cursor-pointer">
+          <div className="w-12 h-12">
+            <Lottie animationData={botAnimation} loop={true} />
+          </div>
+        </div>
       </div>
     </section>
   )
