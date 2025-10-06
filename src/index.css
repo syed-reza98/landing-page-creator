@@ -28,6 +28,19 @@
   --input: oklch(0.18 0.08 270);
   --ring: oklch(0.65 0.30 285);
   --radius: 1rem;
+
+  /* Brand gradient colors */
+  --gradient-from: #8B5CF6;
+  --gradient-to: #A78BFA;
+  
+  /* Card styles */
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-border: rgba(255, 255, 255, 0.1);
+  
+  /* Input styles */
+  --input-bg: rgba(255, 255, 255, 0.05);
+  --input-border: rgba(255, 255, 255, 0.15);
+  --input-placeholder: rgba(255, 255, 255, 0.4);
 }
 
 @theme {
@@ -191,6 +204,31 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary:hover {
   transform: translateY(-1px);
   box-shadow: 0 6px 20px 0 rgba(139, 92, 246, 0.4);
+}
+
+/* Gradient button with glow effect */
+.btn-gradient {
+  background: linear-gradient(135deg, var(--gradient-from), var(--gradient-to));
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-gradient:hover {
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.6);
+}
+
+/* Card with glassmorphism effect */
+.glass-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  backdrop-filter: blur(10px);
+}
+
+/* Global gradient background */
+.gradient-bg {
+  background: 
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(139, 92, 246, 0.3) 0%, transparent 50%),
+    linear-gradient(180deg, rgba(109, 40, 217, 0.1) 0%, rgba(88, 28, 135, 0.05) 100%),
+    oklch(0.06 0.05 270);
 }
 
 

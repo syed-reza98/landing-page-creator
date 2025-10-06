@@ -12,11 +12,15 @@ import { WhyChooseSection } from "@/components/WhyChooseSection"
 import { TestimonialsSection } from "@/components/TestimonialsSection"
 import { BlogSection } from "@/components/BlogSection"
 import { PodcastSection } from "@/components/PodcastSection"
-import { Footer } from "@/components/Footer"
+import { ContactSection } from "@/components/Contact/ContactSection"
+import { FAQSection } from "@/components/FAQ/FAQSection"
+import { MapSection } from "@/components/Map/MapSection"
+import { NewsletterCTA } from "@/components/CTA/NewsletterCTA"
+import { SiteFooter } from "@/components/Footer/SiteFooter"
 
 function App() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen gradient-bg text-foreground">
       <TopBar />
       <Navbar />
       <HeroSection />
@@ -30,7 +34,11 @@ function App() {
       <TestimonialsSection />
       <BlogSection />
       <PodcastSection />
-      <Footer />
+      <ContactSection />
+      <FAQSection />
+      <MapSection />
+      <NewsletterCTA />
+      <SiteFooter />
     </div>
   )
 }
