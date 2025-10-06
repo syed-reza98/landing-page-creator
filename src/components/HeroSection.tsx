@@ -1,15 +1,18 @@
 import React from "react"
 import { Button } from "@/components/ui/button"
 import { Sparkle, ChatCircle } from "@phosphor-icons/react"
+import Lottie from "lottie-react"
+import logoAnimation from "../../Materiel/Lottie Files/Logo.json"
+import textAnimation from "../../Materiel/Lottie Files/Text.json"
 
 export function HeroSection() {
   return (
     <section className="relative py-24 overflow-hidden hero-background">
-      {/* Geometric background elements */}
-      <div className="absolute inset-0">
-        <div className="absolute top-20 right-20 w-60 h-60 border-2 border-primary/30 rounded-3xl transform rotate-12" />
-        <div className="absolute top-40 right-40 w-80 h-80 border-2 border-primary/20 rounded-3xl transform -rotate-12" />
-        <div className="absolute top-60 right-10 w-96 h-96 border-2 border-primary/10 rounded-3xl transform rotate-6" />
+      {/* Animated background logo */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full opacity-20">
+          <Lottie animationData={logoAnimation} loop={true} />
+        </div>
       </div>
       
       <div className="max-w-7xl mx-auto px-4 relative z-10">
@@ -22,26 +25,28 @@ export function HeroSection() {
             </h1>
             
             <p className="text-lg text-muted-foreground mb-10 leading-relaxed">
-              We are constantly growing or learning and improving.Enter your the 
+              We are constantly growing or learning and improving. Enter your the 
               personal real estate sanctuary, where finding the ideal home is 
               effortless and comfortable with our assistance.
             </p>
             
-            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-base rounded-full font-medium">
+            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 text-base rounded-full font-medium transition-all hover:shadow-lg hover:shadow-primary/50">
               <Sparkle size={20} className="mr-2" />
               Explore Now
             </Button>
           </div>
           
           <div className="relative lg:block hidden">
-            {/* This space matches the geometric elements in the background */}
+            <div className="w-full h-96">
+              <Lottie animationData={textAnimation} loop={true} />
+            </div>
           </div>
         </div>
       </div>
       
       {/* Floating help button */}
       <div className="fixed bottom-8 right-8 z-50">
-        <Button size="icon" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full w-16 h-16 shadow-xl">
+        <Button size="icon" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full w-16 h-16 shadow-xl hover:shadow-2xl hover:shadow-primary/50 transition-all">
           <ChatCircle size={28} />
         </Button>
       </div>
