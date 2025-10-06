@@ -1,22 +1,35 @@
 import React from "react"
-import { AnnouncementBar } from "@/components/AnnouncementBar"
-import { Header } from "@/components/Header"
+import { TopBar } from "@/components/TopBar"
+import { Navbar } from "@/components/Navbar"
 import { HeroSection } from "@/components/HeroSection"
+import { BrandLogos } from "@/components/BrandLogos"
+import { DiscountBanner } from "@/components/DiscountBanner"
+import { ServicesSection } from "@/components/ServicesSection"
+import { PortfolioSection } from "@/components/PortfolioSection"
+import { ProcessSection } from "@/components/ProcessSection"
+import { StatsSection } from "@/components/StatsSection"
+import { TestimonialsSection } from "@/components/TestimonialsSection"
+import { BlogSection } from "@/components/BlogSection"
+import { PodcastSection } from "@/components/PodcastSection"
 
 function App() {
   return (
-    <div className="min-h-screen text-foreground relative overflow-hidden">
-      {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-muted/20 pointer-events-none" />
-      
-      {/* Content */}
-      <div className="relative z-10">
-        <AnnouncementBar />
-        <Header />
-        <HeroSection />
-      </div>
+    <div className="min-h-screen bg-background text-foreground">
+      <TopBar />
+      <Navbar />
+      <HeroSection />
+      <BrandLogos />
+      <DiscountBanner />
+      <ServicesSection />
+      <PortfolioSection />
+      <ProcessSection />
+      <StatsSection />
+      <TestimonialsSection />
+      <BlogSection />
+      <PodcastSection />
     </div>
   )
 }
 
 export default App
+
