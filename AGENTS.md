@@ -96,7 +96,7 @@ React + TypeScript frontend engineer (Tailwind CSS + Vite) — implement a pixel
 ## Notes and guidance
 - Prioritize layout/spacing over pixel-perfect color if a token mismatch exists. Document any approximations.
 - Keep commits small and focused (one major component per commit).
-- If any required assets (logo SVG, hi-res hero image, proprietary fonts) are missing check the ./material directory for the missing assets otherwise document what is needed in the PR and stop further changes until provided.
+- If any required assets (logo SVG, hi-res hero image, proprietary fonts) are missing check the ./Materiel directory for the missing assets otherwise document what is needed in the PR and stop further changes until provided.
 
 ---
 Last updated: 2025-10-07
