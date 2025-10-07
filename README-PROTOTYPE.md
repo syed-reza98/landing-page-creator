@@ -40,3 +40,5 @@ Visit http://localhost:5000 to see the prototype landing page.
 - ✅ Modern gradient design
 - ✅ TypeScript + React + Tailwind CSS
 - ✅ Production-ready build
+
+Note: Due to git branch initialization, this work is on `copilot/implement-copilot-prototype-screenshots` instead of `copilot/clone-prototype-screenshots`.
